@@ -1,0 +1,31 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@alpinejs/collapse": "^3.12.1",
+        "@alpinejs/focus": "^3.10.5",
+        "@alpinejs/intersect": "^3.12.0",
+        "@ryangjchandler/alpine-tooltip": "^1.2.0",
+        "@tailwindcss/forms": "^0.5.2",
+        "@tailwindcss/typography": "^0.5.0",
+        "alpinejs": "^3.0.6",
+        "autoprefixer": "^10.4.7",
+        "axios": "^1.1.2",
+        "glightbox": "^3.2.0",
+        "hamburgers": "^1.2.1",
+        "laravel-vite-plugin": "^0.7.2",
+        "postcss": "^8.4.14",
+        "sass": "^1.60.0",
+        "tailwindcss": "^3.1.0",
+        "vite": "^4.0.0",
+        "vite-plugin-static-copy": "^0.14.0"
+    },
+    "dependencies": {
+        "@edsardio/alpine-lightbox": "^1.0.7",
+        "flatpickr": "^4.6.13",
+        "flowbite": "^2.0.0"
+    }
+}
