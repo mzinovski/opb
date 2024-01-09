@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="{{ Vite::asset('resources/images/logos/favicon.ico')}}" type="image/ico" />
-        <!-- Font awesome font -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> -->
-        <!-- main fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-        
-      
+  <head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{{ Vite::asset('resources/images/logos/favicon.ico')}}" type="image/ico" />
 
-        @vite(['resources/css/app.css', 'resources/scss/theme-styles.scss', 'resources/js/app.js'])
+    <title>@yield('title')</title>
 
-        <style>
-            [x-cloak] {
-                display: none;  
-            }
-        </style>
+    <meta name="title" content="@yield('meta_title')">
+    <meta name="description" content="@yield('description')">
+    {{-- facebook meta tags --}}
+    <meta name="og:title" content="@yield('fb_meta_title')">
+    <meta name="og:description" content="@yield('fb_description')">
+    <meta property="og:url" content="@yield('fb_route')" />
+    <meta property="og:type" content="@yield('fb_type')" />
+    <meta property="og:image" content="@yield('fb_image')" />
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="315"/>
 
-        <title>@yield('title')</title>
+    {{-- twitter meta tags --}}
+    <meta name="twitter:title" content="@yield('twitter_meta_title')">
+    <meta name="twitter:description" content="@yield('twitter_description')">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="@yield('twitter_url')" />
 
-        <meta name="title" content="@yield('meta_title')">
-        <meta name="description" content="@yield('description')">
-        {{-- facebook meta tags --}}
-        <meta name="og:title" content="@yield('fb_meta_title')">
-        <meta name="og:description" content="@yield('fb_description')">
-        <meta property="og:url" content="@yield('fb_route')" />
-        <meta property="og:type" content="@yield('fb_type')" />
-        <meta property="og:image" content="@yield('fb_image')" />
-        <meta property="og:image:width" content="600"/>
-        <meta property="og:image:height" content="315"/>
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Icon Font Css -->
+    <link rel="stylesheet" href="/plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="/plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/plugins/magnific-popup/dist/magnific-popup.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="/plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/plugins/slick-carousel/slick/slick-theme.css">
 
-        {{-- twitter meta tags --}}
-        <meta name="twitter:title" content="@yield('twitter_meta_title')">
-        <meta name="twitter:description" content="@yield('twitter_description')">
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="@yield('twitter_url')" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/my_css/style.css">
+
+</head>
+
+<body>
 
 
-        
-    </head>
-    <body id="body" class="!bg-white text-lg md:text-xl !leading-[160%] group/togglemenu scroll-smooth"  x-data="{togglemenu:false, active: false, atTop: false, toTop: false}" x-bind:class="{'overflow-hidden' : togglemenu}">
-      
+@include('landing.partials.header')
 
-        @include('landing.partials.header')
-        
-        @yield('content')
+<div class="main-wrapper ">
+
+    @yield('content')
+
+
+@include('landing.partials.footer')
+   
+    </div>
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
     
-        @include('landing.partials.footer')
+    <!-- Main jQuery -->
+    <script src="/plugins/jquery/jquery.js"></script>
+    <script src="/my_js/contact.js"></script>
+    <!-- Bootstrap 4.3.1 -->
+    <script src="/plugins/bootstrap/js/popper.js"></script>
+    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+   <!--  Magnific Popup-->
+    <script src="/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="/plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Counterup -->
+    <script src="/plugins/counterup/jquery.waypoints.min.js"></script>
+    <script src="/plugins/counterup/jquery.counterup.min.js"></script>
 
-        @livewireScripts
+    <!-- Google Map -->
+    <script src="/plugins/google-map/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    
+    <script src="/my_js/script.js"></script>
+
+    @livewireScripts
         
-        @stack('scripts')
-        <script type="module">
-          
-        </script>
-    </body>
-</html>
+    @stack('scripts')
+
+  </body>
+  </html>
+   
