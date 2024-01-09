@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Livewire\Proekti;
+namespace App\Http\Livewire\GodisniIzvestai;
 
 use Livewire\Component;
-use App\Models\Proekt;
+use App\Models\GodisniIzvestaj;
 use Livewire\WithPagination;
 
 class Front extends Component
@@ -17,8 +17,6 @@ class Front extends Component
     public $search = '';
     public $order_by = 'created_at';
     public $order_type = 'desc';
-
-    public $proektiFilter = 'realizirani';
 
     protected $listeners = [
         '$refresh'
@@ -38,12 +36,15 @@ class Front extends Component
         }
     }
 
+    public function downloadIzvestaj($file)
+    {
+    	return response()->download(storage_path('app/uploads/izvestai/'.$file));
+    }
+
     public function render()
     {
-    	$proekti = Proekt::orderBy($this->order_by, $this->order_type)
-    		->where('type', $this->proektiFilter)
+    	$godisni_izvestai = GodisniIzvestaj::orderBy($this->order_by, $this->order_type)
             ->paginate($this->per_page_selected);
-
-        return view('livewire.proekti.front', ['proekti' => $proekti]);
+        return view('livewire.godisni-izvestai.front', ['godisni_izvestai' => $godisni_izvestai]);
     }
 }

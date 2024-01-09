@@ -1,39 +1,29 @@
 <!-- footer Start -->
-<footer class="footer section">
+<footer class="footer section latest-blog" style="color: white!important;">
     <div class="container">
         <div class="row">
+            
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="widget">
-                    <h4 class="text-capitalize mb-4">Company</h4>
+                    <h4 class="text-capitalize mb-4 text-white">Линкови</h4>
 
-                    <ul class="list-unstyled footer-menu lh-35">
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="widget">
-                    <h4 class="text-capitalize mb-4">Quick Links</h4>
-
-                    <ul class="list-unstyled footer-menu lh-35">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="list-unstyled footer-menu lh-35 text-white">
+                        <li><a class="text-white" href="#">Кои сме</a></li>
+                        <li><a class="text-white" href="#">Членство</a></li>
+                        <li><a class="text-white" href="#">Годишни извештаи</a></li>
+                        <li><a class="text-white" href="#">Новости</a></li>
+                        <li><a class="text-white" href="#">Проекти</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="widget">
-                    <h4 class="text-capitalize mb-4">Subscribe Us</h4>
-                    <p>Subscribe to get latest news article and resources  </p>
+                    <h4 class="text-capitalize mb-4 text-white">Оставете епошта</h4>
+                    <p class="text-white">Оставете ни епошта за да можеме да ве контактираме</p>
 
                     <form action="#" class="sub-form">
-                        <input type="text" class="form-control mb-3" placeholder="Subscribe Now ...">
-                        <a href="#" class="btn btn-main btn-small">subscribe</a>
+                        <input type="text" class="form-control mb-3" placeholder="Епошта ...">
+                        <a href="#" class="btn btn-main btn-small text-white">Испрати</a>
                     </form>
                 </div>
             </div>
@@ -41,10 +31,10 @@
             <div class="col-lg-3 ml-auto col-sm-6">
                 <div class="widget">
                     <div class="logo mb-4">
-                        <h3>Mega<span>kit.</span></h3>
+                        <img src="/imgs/OPBlogo.webp" style="width: 20%;">
                     </div>
-                    <h6><a href="tel:+23-345-67890" >Support@megakit.com</a></h6>
-                    <a href="mailto:support@gmail.com"><span class="text-color h4">+23-456-6588</span></a>
+                    <a href="mailto:opbitola@yahoo.com"><span class="text-color h4">opbitola@yahoo.com</span></a><br>
+                    <a href="tel:+38947228246"><span class="text-color h4">047/228-246</span></a>
                 </div>
             </div>
         </div>
@@ -52,21 +42,19 @@
         <div class="footer-btm pt-4">
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="copyright">
-                        &copy; Copyright Reserved to <span class="text-color">Megakit.</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>
+                    <div class="copyright text-white">
+                        &copy; {{ now()->year }} Сите права се заштитени <span class="text-color">ОПБ</span>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="copyright">
-                    Distributed by  <a href="https://themewagon.com/" target="_blank">Themewagon</a>
+                    <div class="copyright text-white">
+                    Изработка:  <a class="text-white" href="https://www.linkedin.com/in/marijan-zinovski-62a87915a/" target="_blank">Маријан Зиновски</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 text-left text-lg-left">
-                    <ul class="list-inline footer-socials">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="ti-facebook mr-2"></i>Facebook</a></li>
-                        <li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="ti-twitter mr-2"></i>Twitter</a></li>
-                        <li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="ti-linkedin mr-2 "></i>Linkedin</a></li>
+                    <ul class="list-inline footer-socials text-white">
+                        <li class="list-inline-item"><a target="_blank" class="text-white" href="https://www.facebook.com/PotrosuvaciBitola/"><i class="ti-facebook mr-2"></i>Facebook</a></li>
                     </ul>
                 </div>
             </div>

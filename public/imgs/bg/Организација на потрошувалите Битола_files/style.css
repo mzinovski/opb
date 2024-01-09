@@ -14,16 +14,6 @@ body {
   color: rgba(0, 0, 0, 0.65);
 }
 
-.page-item.active .page-link {
-  background-color: #039541!important;
-  border-color: #039541!important;
-  color: white!important;
-}
-
-.page-link {
-  color: #039541!important;
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
