@@ -34,9 +34,7 @@
     <link rel="stylesheet" href="/plugins/themify/css/themify-icons.css">
     <link rel="stylesheet" href="/plugins/fontawesome/css/all.css">
     <link rel="stylesheet" href="/plugins/magnific-popup/dist/magnific-popup.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="/plugins/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/plugins/slick-carousel/slick/slick-theme.css">
+ 
     @livewireStyles
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="/my_css/style.css">
@@ -270,16 +268,7 @@
     <script src="/plugins/bootstrap/js/popper.js"></script>
     <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
    <!--  Magnific Popup-->
-    <script src="/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="/plugins/slick-carousel/slick/slick.min.js"></script>
-    <!-- Counterup -->
-    <script src="/plugins/counterup/jquery.waypoints.min.js"></script>
-    <script src="/plugins/counterup/jquery.counterup.min.js"></script>
-
-    <!-- Google Map -->
-    {{-- <script src="/plugins/google-map/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> --}}    
+    <script src="/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>    
     
     <script src="/my_js/script.js"></script>
     <script src="/my_js/aos.js"></script>
@@ -289,8 +278,6 @@
     </script>
 
     @livewireScripts
-
-
         
     @stack('scripts')
 

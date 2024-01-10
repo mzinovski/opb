@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row justify-content-center">
 	    <div class="col-lg-7 text-center">
-	        <div class="section-title">
+	        <div class="section-title" data-aos="fade-right" data-aos-offset="1" data-aos-delay="0" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
 	            <span class="h6 text-color">Проекти</span>
 	            <h2 class="mt-3 content-title">
 	            	@if($proektiFilter == 'tekovni_aktivnosti')
@@ -14,7 +14,7 @@
 	        </div>
 	    </div>
 	</div>
-	<div class="row justify-content-center">
+	<div class="row justify-content-center" data-aos="fade-left" data-aos-offset="1" data-aos-delay="0" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
 		<div class="w-100 pb-5" style="text-align: center!important;">
 			<div class="form-check" style="color: black!important;">
 				<input type="radio" class="btn-check" wire:model="proektiFilter" name="proektiFilter" value="tekovni_aktivnosti" id="option51" autocomplete="off">

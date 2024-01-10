@@ -19,7 +19,7 @@
 @section('content')
 
 <!-- Start -->
-<section class="slider">
+<section class="slider" id="pocetna">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-md-10">
@@ -34,7 +34,7 @@
 </section>
 
 <!-- Section Koi Sme Start -->
-<section class="section intro">
+<section class="section intro" id="koi_sme">
     <div class="container">
         <div class="row ">
             <div class="col-lg-8">
@@ -72,7 +72,7 @@
 <!-- Section Koi Sme END -->
 
  <!-- Section Clenstvo Start --> 
-<section class="section cta">
+<section class="section cta" id="clenstvo">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -94,11 +94,11 @@
 
 
 <!--  Section Godisni Izvestai -->
-<section class="section service border-top">
+<section class="section service border-top" id="godisni_izvestai">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
-                <div class="section-title">
+                <div class="section-title" data-aos="fade-right" data-aos-offset="1" data-aos-delay="0" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
                     <span class="h6 text-color">За нас</span>
                     <h2 class="mt-3 content-title ">Годишни извештаи</h2>
                 </div>
@@ -110,22 +110,23 @@
 <!--  Section Godisni Izvestai End -->
 
 <!--  Section Novosti -->
-<section class="section latest-blog bg-2">
+<section class="section latest-blog bg-2" id="novosti">
     <livewire:novosti.front />
 </section>
 <!--  Section Novosti End -->
 
 <!--  Section Proekti -->
-<section class="section">
+<section class="section" id="proekti">
     <livewire:proekti.front />
 </section>
 <!--  Section Proekti End -->
 
-<section class="mt-70 position-relative">
+<!--  Section Kontakt -->
+<section class="mt-70 position-relative" id="kontakt">
     <div class="container">
     <div class="cta-block-2 bg-gray p-5 rounded border-1">
         <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-offset="1" data-aos-delay="0" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
                  <form id="contact-form" class="contact__form" method="post" action="mail.php">
                  <!-- form message -->
                     <div class="row">
@@ -151,7 +152,7 @@
                 </form>
             </div>
 
-            <div class="col-lg-5 col-sm-12">
+            <div class="col-lg-5 col-sm-12" data-aos="fade-left" data-aos-offset="1" data-aos-delay="0" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
                 <div class="contact-content pl-lg-5 mt-5 mt-lg-0">
                     <span class="text-muted">Најдете не</span>
                     <h2 class="mb-5 mt-2">За повеќе информации слободно контактирајте нé</h2>
@@ -180,6 +181,7 @@
 </div>
 
 </section>
+<!--  Section KOntakt End -->
 
 @endsection
 

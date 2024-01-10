@@ -1,7 +1,5 @@
 <!-- Header Start --> 
-
 <header class="navigation">
-    
     <nav class="navbar navbar-expand-lg  py-4" id="navbar">
         <div class="container">
           <a class="navbar-brand" href="index.html">
@@ -12,31 +10,29 @@
             <span class="fa fa-bars"></span>
           </button>
       
-          <div class="collapse navbar-collapse text-center" id="navbarsExample09">
-            <ul class="navbar-nav ml-auto">
+          <div class="collapse navbar-collapse text-center" id="navbarsExample09" style="z-index: 1111;">
+            <ul class="navbar-nav ml-auto" >
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Почетна</a>
+                <a class="nav-link data-scroll" href="#" data-section="pocetna">Почетна</a>
               </li>
-              <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">За нас</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                        <li><a class="dropdown-item" href="about.html">Кои сме</a></li>
-                        <li><a class="dropdown-item" href="pricing.html">Членство</a></li>
-                        <li><a class="dropdown-item" href="pricing.html">Годишни Извештаи</a></li>
+              <li class="nav-item dropdown" style="z-index: 1111;">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="z-index: 1111;">За нас</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown03" style="z-index: 1111;">
+                        <li style="z-index: 1111;"><a style="z-index: 1111;" class="dropdown-item data-scroll" data-section="koi_sme" href="#">Кои сме</a></li>
+                        <li style="z-index: 1111;"><a style="z-index: 1111;" class="dropdown-item data-scroll" data-section="clenstvo" href="#">Членство</a></li>
+                        <li style="z-index: 1111;"><a style="z-index: 1111;" class="dropdown-item data-scroll" data-section="godisni_izvestai" href="#">Годишни Извештаи</a></li>
                     </ul>
               </li>
-               <li class="nav-item"><a class="nav-link" href="service.html">Новости</a></li>
-               <li class="nav-item"><a class="nav-link" href="project.html">Проекти</a></li>
-               <li class="nav-item"><a class="nav-link" href="project.html">Материјали</a></li>
+               <li class="nav-item"><a class="nav-link data-scroll" data-section="novosti" href="#">Новости</a></li>
+               <li class="nav-item"><a class="nav-link data-scroll" data-section="proekti" href="#">Проекти</a></li>
+               <li class="nav-item"><a class="nav-link data-scroll" data-section="materijali" href="#">Материјали</a></li>
                
             </ul>
 
-            <form class="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
-              <a href="contact.html" class="btn btn-solid-border btn-round-full">Контакт</a>
-            </form>
+            <a href="#" class="btn btn-solid-border btn-round-full data-scroll" data-section="kontakt">Контакт</a>
+            
           </div>
         </div>
     </nav>
 </header>
-
 <!-- Header Close --> 

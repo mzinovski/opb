@@ -1,5 +1,5 @@
 <div>
-	<div class="row justify-content-center">
+	<div class="row justify-content-center" data-aos="fade-left" data-aos-offset="1" data-aos-delay="0" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
 		@foreach($godisni_izvestai as $izvestaj)
 		    <div class="col-lg-4 col-md-6 col-sm-6">
 		        <div class="service-item mb-5">
