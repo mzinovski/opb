@@ -10,11 +10,28 @@ $(document).ready(function() {
 	    var $section = $("#" + $(this).attr('data-section')); 
 	    $('html, body').animate({
 	      scrollTop: $section.offset().top - 70
-	    }, 200);
+	    }, 180);
 	  }
 	  $(document).on('click', '.data-scroll', scrollToSection);
 
+	  // Back to top
+		var amountScrolled = 200;
+		var amountScrolledNav = 25;
 
+		$(window).scroll(function() {
+		  if ( $(window).scrollTop() > amountScrolled ) {
+		    $('button.back-to-top').addClass('show');
+		  } else {
+		    $('button.back-to-top').removeClass('show');
+		  }
+		});
+
+		$('button.back-to-top').click(function() {
+		  $('html, body').animate({
+		    scrollTop: 0
+		  }, 180);
+		  return false;
+		});
 	
 
 
